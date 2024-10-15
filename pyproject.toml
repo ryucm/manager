@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "manager"
+version = "0.1.0"
+description = ""
+authors = ["changmin.ryu <changmin.ryu@timf.co.kr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "==3.11.4"
+mysqlclient = "^2.2.4"
+apache-airflow = {extras = ["mysql"], version = "==2.10.2"}
+mysql-connector-python = "==8.0.26"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
